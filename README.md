@@ -36,4 +36,4 @@ Sau đó mới quay lại bước 2.0.2.
 ### 2.2. Đóng góp về quy trình
 
 Rất mong mọi người đóng góp về quy trình và guideline bằng cách sửa file README này.
-Để sREADME file, ở bước 2.0.2, bạn tạo/checkout branch có tên là README_Update, thực hiện sửa đổi, push code và tạo pull request như các bài tập khác. Sau khi thay đổi được cập nhật, branch README_Update không bị xóa. 
+Để sửa README file, ở bước 2.0.2, bạn tạo/checkout branch có tên là README_Update, thực hiện sửa đổi, push code và tạo pull request như các bài tập khác. Sau khi thay đổi được cập nhật, branch README_Update không bị xóa. 
