@@ -1,14 +1,15 @@
 # FUNiX_ReadBook_JavaIntro
-#cungnhaudocsach Introduction to Java programming - Robert Sedgewick
+#cungnhaudocsach Introduction to Java programming - Robert Sedgewick <br/>
 Link sách: https://introcs.cs.princeton.edu/java/home
 
 ## Tiến độ hiện tại
-Bài đọc: 
--Phần 1: 1.2. Java datatypes (continue)
-Bài tập luyện thêm: 
--Nếu cảm thấy siêng năng: Làm các bài tập từ bài 18 đến 23 + Creative exercises + Web Exercises.
--Nếu cảm thấy bình thường: Làm từ bài 20 - 23 và các bài trong Web Exercises.
--Nếu cảm thấy lười: Làm các bài trong Web Exercises.
+Bài đọc: <br/>
+-Phần 1: 1.2. Java datatypes (continue)<br/>
+Link cụ thể: https://introcs.cs.princeton.edu/java/12types/<br/>
+Bài tập luyện thêm trong phần 1.2: <br/>
+-Nếu cảm thấy siêng năng: Làm các bài tập từ bài 18 đến 23 + Creative exercises + Web Exercises.<br/>
+-Nếu cảm thấy bình thường: Làm từ bài 20 - 23 và các bài trong Web Exercises.<br/>
+-Nếu cảm thấy lười: Làm các bài trong Web Exercises.<br/>
 
 ## 1. Cấu trúc thư mục
 
