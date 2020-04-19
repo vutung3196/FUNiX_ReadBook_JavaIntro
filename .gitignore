@@ -21,6 +21,8 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# Git ignore for VuAnhIT folder
 Chapter_1/VuAnhIT/.idea/
 Chapter_1/VuAnhIT/out/
 Chapter_1/VuAnhIT/VuAnhIT.iml
