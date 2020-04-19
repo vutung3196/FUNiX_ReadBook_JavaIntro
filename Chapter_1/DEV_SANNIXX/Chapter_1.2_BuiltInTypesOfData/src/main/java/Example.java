@@ -5,5 +5,6 @@ public class Example {
         a = 1234;
         b = 99;
         c = a + b;
+        System.out.println(a + " + "+ b + " = " + c);
     }
 }
