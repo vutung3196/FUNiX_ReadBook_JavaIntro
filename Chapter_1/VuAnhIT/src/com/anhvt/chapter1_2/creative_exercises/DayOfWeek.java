@@ -59,6 +59,7 @@ public class DayOfWeek {
                 break;
             default:
                 System.out.println("Something in method dayOfWeek is wrong!");
+                break;
         }
     }
 }
