@@ -10,7 +10,19 @@ public class Trig {
 		
 		// sin
 		double sin = Math.sin(rad);
-
+		System.out.println("Sin: " + sin);
+		
+		// cos
+		double cos = Math.cos(rad);
+		System.out.println("Cos: " + cos);
+		
+		// tan == sin/cos
+		double tan = Math.tan(rad);
+		System.out.println("Tan: " + tan);
+		System.out.println("Sin/cos: " + sin / cos);
+		
+		// sin^2 + cos^2 == 1
+		System.out.println("sin^2 + cos^2 = " + (Math.pow(sin, 2) + Math.pow(cos, 2)));
 	}
 
 }
