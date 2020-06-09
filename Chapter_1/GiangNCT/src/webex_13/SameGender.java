@@ -8,16 +8,13 @@ public class SameGender {
 		int CASES = 1000;
 		int[] commons = new int [CASES];
 		int sum = 0;
+		double p = 1.0 / 50;
 		for (int i = 0; i < CASES; i++) {
-			boolean haveBoy = false, haveGirl = false;
 			int count = 0;
-			while (!(haveBoy && haveGirl)) {
-				double child = Math.random();
-				if (child < 0.5) {
-					haveBoy = true;
-				} else {
-					haveGirl = true;
-				}
+			boolean firstGender = Math.random() < p;
+			boolean currentGender = !firstGender;
+			while (currentGender != firstGender) {
+				currentGender = Math.random() < p;
 				count++;
 			}
 			commons[count]++;
