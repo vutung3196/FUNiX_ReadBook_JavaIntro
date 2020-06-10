@@ -6,7 +6,21 @@ package webex_13;
 public class BohrRadius {
 
   public static void main(String[] args) {
-    // TODO Auto-generated method stub
+    //double r = Double.valueOf(args[0]);
+    // r = 0, 5, 13 => 3 dif. roots
+    // r = 4, 12 => NaN since derivative = 0
+    double r = 0;
+    double eps = 1e-15;
+    double f = 0.0, derivative = 0.0;
+    
+    for (int i = 0; i < 50; i++) {
+      f = 1 - 3 * r / 4 + Math.pow(r, 2) / 8 - Math.pow(r, 3) / 192;
+      derivative = -3/4.0 + r / 4 - Math.pow(r, 2) / 64;
+      
+      r = r - f / derivative;
+      if (Math.abs(f) < eps) break;
+    }
+    System.out.println("Root: " + r);
 
   }
 
