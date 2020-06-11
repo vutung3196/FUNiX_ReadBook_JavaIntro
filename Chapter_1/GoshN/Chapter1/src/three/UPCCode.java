@@ -1,7 +1,10 @@
 package three;
 
 public class UPCCode {
-
+	// The Universal Product Code (UPC) is a 12 digit code that uniquely specifies a product. 
+	//The least significant digit d1(rightmost one) is a check digit which is the uniquely determined
+	//by making the following expression a multiple of 10:
+	//(d1 + d3 + d5 + d7 + d9 + d11) + 3 (d2 + d4 + d6 + d8 + d10 + d12)
 	public static void main(String[] args) {
 
 		 long n = Long.parseUnsignedLong(args[0]);

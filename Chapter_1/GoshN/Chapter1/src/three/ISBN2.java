@@ -1,7 +1,8 @@
 package three;
 
 public class ISBN2 {
-
+	//Write a program ISBN2.java that reads in a 9 digit integer from a command-line argument,
+	//computes the check digit, and prints the fully formatted ISBN number, e.g, 0-201-31452-5.
 	public static void main(String[] args) {
 		int n = Integer.parseInt(args[0]);
         String isbn = "";
