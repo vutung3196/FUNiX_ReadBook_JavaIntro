@@ -8,6 +8,7 @@ public class MiniPlayer {
   final private static double[] HZS = {440.0, 493.88, 523.25, 587.33, 659.26, 698.46, 783.99};
   final private static double BASE_DURATION = 0.4;
   final private static int SAMPLING_RATE = 44100;
+  final private static double TONE = 0.3;
 
   public static void main(String[] args) {
     // Nhin nhung mua thu di, em nghe sau len trong nang
@@ -33,7 +34,7 @@ public class MiniPlayer {
     for (int i = 0; i < NOTES.length; i++) {
       if (baseNote == NOTES[i]) hz = HZS[i]; 
     }
-    hz *= octave;
+    hz *= octave * TONE;
     double duration = BASE_DURATION * length;
     System.out.println(duration + " " + hz);
     // Sampling and play
