@@ -199,6 +199,21 @@ public final class Picture implements ActionListener {
         filename = file.getName();
     }
 
+    /**
+     * Creates a picture from {@link java.awt.image.BufferedImage}
+     * @param img the image
+     * @throws IllegalArgumentException if {@code file} is {@code null}
+     */
+    public Picture(BufferedImage img) {
+        if (img == null) {
+            throw new IllegalArgumentException("could not read the image ");
+        }
+        image = img;
+        width  = image.getWidth(null);
+        height = image.getHeight(null);
+        filename = Long.toString(System.currentTimeMillis()) + ".png";
+    }
+    
    /**
      * Returns a {@link JLabel} containing this picture, for embedding in a {@link JPanel},
      * {@link JFrame} or other GUI widget.
@@ -454,6 +469,14 @@ public final class Picture implements ActionListener {
         if (chooser.getFile() != null) {
             save(chooser.getDirectory() + File.separator + chooser.getFile());
         }
+    }
+    
+    /**
+     * Returns the corresponding {@link java.awt.image.BufferedImage} object
+     * @return the inner {@link java.awt.image.BufferedImage}
+     */
+    public BufferedImage getBufferedImage() {
+      return image;
     }
 
    /**
